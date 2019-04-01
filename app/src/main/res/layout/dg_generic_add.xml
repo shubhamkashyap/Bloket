@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/dialogBackground"
+    android:minWidth="@dimen/minDialogWidth"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Add from contact"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvAddNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Add a number"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvAddGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Add a group"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvAddStarts"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Number starts with"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvAddEnds"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Number ends with"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvAddContains"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Number contains"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvAddRange"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Range of numbers"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+</LinearLayout>

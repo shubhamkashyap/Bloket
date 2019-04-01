@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/dialogBackground"
+    android:minWidth="@dimen/minDialogWidth"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvSetTime"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/listSelector"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_action_options"
+        android:drawablePadding="16dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="Set block schedule"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvSetMessage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_action_options"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Set reply message"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+    <TextView
+        android:id="@+id/tvDeleteItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_action_options"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:text="Delete"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/textSizeNormal" />
+
+</LinearLayout>

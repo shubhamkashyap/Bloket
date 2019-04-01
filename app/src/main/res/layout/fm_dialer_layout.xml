@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/drKeyCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/sizeEight"
+        android:background="@drawable/bg_dialpad_call"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/dp_txt_call"
+        android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+    <LinearLayout
+        android:id="@+id/drKeyGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDialPad"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/sizeFour"
+            android:rotation="180">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                app:cardElevation="@dimen/sizeSixteen">
+
+                <EditText
+                    android:id="@+id/drPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:padding="@dimen/sizeEight"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerPhone"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/drKeyOne"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_1"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drKeyTwo"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_2"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_2"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drKeyThree"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_3"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_3"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/drKeyFour"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_4"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_4"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drKeyFive"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_5"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_5"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drKeySix"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_6"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_6"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/drKeySeven"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_7"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_7"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drKeyEight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_8"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_8"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drKeyNine"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_9"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_9"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/drKeyStar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/dp_txt_star"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/textSizeDialerGridPrimary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/drKeyZero"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_num_0"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dp_txt_plus"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="@dimen/textSizeDialerGridSecondary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/drKeyPound"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/dp_txt_hash"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/textSizeDialerGridPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/drKeyHide"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/empty"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_dialpad_hide" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/drKeyBack"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialPadButtonHeight"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/empty"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_dialpad_back" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drDialerContactList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/drKeyGrid"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dialPadButtonHeight" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Bloket</string>
+    <string name="empty"> </string>
+
+    <!-- Dial pad numbers, text and regex -->
+    <string name="dp_num_0">0</string>
+    <string name="dp_num_1">1</string>
+    <string name="dp_num_2">2</string>
+    <string name="dp_num_3">3</string>
+    <string name="dp_num_4">4</string>
+    <string name="dp_num_5">5</string>
+    <string name="dp_num_6">6</string>
+    <string name="dp_num_7">7</string>
+    <string name="dp_num_8">8</string>
+    <string name="dp_num_9">9</string>
+
+    <string name="dp_txt_2">ABC</string>
+    <string name="dp_txt_3">DEF</string>
+    <string name="dp_txt_4">GHI</string>
+    <string name="dp_txt_5">JKL</string>
+    <string name="dp_txt_6">MNO</string>
+    <string name="dp_txt_7">PQRS</string>
+    <string name="dp_txt_8">TUV</string>
+    <string name="dp_txt_9">WXYZ</string>
+    <string name="dp_txt_star">*</string>
+    <string name="dp_txt_plus">+</string>
+    <string name="dp_txt_hash">#</string>
+    <string name="dp_txt_call">CALL</string>
+
+    <string name="dp_reg_0">[0]</string>
+    <string name="dp_reg_1">[1]</string>
+    <string name="dp_reg_2">[2abc]</string>
+    <string name="dp_reg_3">[3def]</string>
+    <string name="dp_reg_4">[4ghi]</string>
+    <string name="dp_reg_5">[5jkl]</string>
+    <string name="dp_reg_6">[6mno]</string>
+    <string name="dp_reg_7">[7pqrs]</string>
+    <string name="dp_reg_8">[8tuv]</string>
+    <string name="dp_reg_9">[9wxyz]</string>
+    <string name="dp_reg_star">[\\*]</string>
+    <string name="dp_reg_hash">[\\#]</string>
+
+    <string name="dp_contact_new">Create new contact</string>
+    <string name="dp_contact_add">Add to a contact</string>
+    <string name="dp_message_send">Send message</string>
+    <string name="dp_device_imei">IMEI</string>
+    <string name="dp_device_imei_1">IMEI 1:</string>
+    <string name="dp_device_imei_2">IMEI 2:</string>
+
+    <string name="gc_ok">OK</string>
+    <string name="gc_sim_one">Sim 1</string>
+    <string name="gc_sim_two">Sim 2</string>
+
+
+    <!-- Contact Picket -->
+    <string name="cp_select_all">Select All</string>
+    <string name="cp_unselect_all">Unselect All</string>
+    <string name="cp_finish_enabled">Finish (%1$s)</string>
+    <string name="cp_finish_disabled">Finish</string>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/sizeEight"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/sizeEight">
+
+        <Switch
+            android:id="@+id/swEnableBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/listSelector"
+            android:minHeight="@dimen/rowMinHeight"
+            android:text="Enable blocking"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="@dimen/textSizeNormal" />
+
+        <RelativeLayout
+            android:id="@+id/rlCallPrefs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/listSelector"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="@dimen/rowMinHeight">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/rowMinHeight"
+                android:text="Call blocking preferences"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="@dimen/textSizeNormal" />
+
+            <ImageView
+                android:id="@+id/ivCallPrefExpand"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/ic_action_expand" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llCallPrefItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/sizeFour"
+            android:paddingEnd="@dimen/sizeFour"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cbBlockAll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowMinHeight"
+                android:background="?attr/listSelector"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:text="Block all calls"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="@dimen/textSizeNormal"
+                tools:ignore="RtlSymmetry" />
+
+            <CheckBox
+                android:id="@+id/cbBlockContacts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowMinHeight"
+                android:background="?attr/listSelector"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:text="Block call from contacts"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="@dimen/textSizeNormal"
+                tools:ignore="RtlSymmetry" />
+
+            <CheckBox
+                android:id="@+id/cbBlockUnknown"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowMinHeight"
+                android:background="?attr/listSelector"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:text="Block unknown numbers"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="@dimen/textSizeNormal"
+                tools:ignore="RtlSymmetry" />
+
+            <CheckBox
+                android:id="@+id/cbBlockPrivate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowMinHeight"
+                android:background="?attr/listSelector"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:text="Block private numbers"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="@dimen/textSizeNormal"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

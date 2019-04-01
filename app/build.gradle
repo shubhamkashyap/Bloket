@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.bloket.android"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha03'
+    implementation 'com.google.android.material:material:1.1.0-alpha04'
+    implementation 'com.balysv.materialmenu:material-menu:2.0.0'
+    implementation 'com.github.broakenmedia:MultiContactPicker:1.8.5'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.10.8'
+    implementation 'com.l4digital.fastscroll:fastscroll:2.0.1'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'io.github.dreierf:material-intro-screen:0.0.6'
+    implementation 'ru.egslava:MaskedEditText:1.0.5'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.2-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha02'
+}
